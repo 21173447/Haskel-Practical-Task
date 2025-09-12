@@ -3,6 +3,7 @@
 import Data.List (sortBy)
 import Data.Ord (comparing)
 
+-- HC2T1
 hc2t1 :: IO ()
 hc2t1 = do
     putStrLn "HC2T1 - Checking Types:"
@@ -12,6 +13,7 @@ hc2t1 = do
     print ('Z' :: Char)
     print (True && False)
 
+-- HC2T2
 add :: Int -> Int -> Int
 add x y = x + y
 
@@ -28,6 +30,7 @@ hc2t2 = do
     putStrLn $ "isEven 4 = " ++ show (isEven 4)
     putStrLn $ "concatStrings \"Hello \" \"World\" = " ++ concatStrings "Hello " "World"
 
+-- HC2T3
 myAge :: Int
 myAge = 25
 
@@ -49,6 +52,7 @@ hc2t3 = do
     print isHaskellFun
     putStrLn "Cannot modify these variables in Haskell"
 
+-- HC2T4
 prefix1 = (+) 5 3
 prefix2 = (*) 10 4
 prefix3 = (&&) True False
@@ -67,7 +71,8 @@ hc2t4 = do
     print infix2
     print infix3
 
-circleAreaF :: Float -> Float
+-- HC2T5
+circleAreaF :: Float -> Float -> Float
 circleAreaF r = pi * r * r
 
 maxOfThree :: Int -> Int -> Int -> Int
@@ -79,6 +84,7 @@ hc2t5 = do
     print (circleAreaF 3.0)
     print (maxOfThree 5 12 9)
 
+-- HC2T6
 smallNumber :: Int
 smallNumber = 262
 
@@ -92,6 +98,7 @@ hc2t6 = do
     print bigNumber
     putStrLn "2^64 :: Int may overflow"
 
+-- HC2T7
 exprAnd :: Bool
 exprAnd = True && True
 
@@ -111,6 +118,7 @@ hc2t7 = do
     print exprOr
     print exprNot
     print exprComparison
+
 
 main :: IO ()
 main = do
